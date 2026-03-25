@@ -1,0 +1,15 @@
+{
+  "name": "dsa-prep-tracker",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently \"npm run dev --prefix server\" \"npm run dev --prefix client\"",
+    "server": "npm run dev --prefix server",
+    "client": "npm run dev --prefix client",
+    "seed:problems": "npm run seed:problems --prefix server",
+    "seed:patterns": "npm run seed:patterns --prefix server"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}

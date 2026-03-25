@@ -1,0 +1,14 @@
+node_modules
+.env
+server/.env
+client/.env
+client/dist
+server/logs
+*.log
+*.err
+server-dev*.log
+server-dev*.err
+client-dev*.log
+client-dev*.err
+server-atlas*.log
+server-atlas*.err

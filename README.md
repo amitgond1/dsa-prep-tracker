@@ -1,6 +1,6 @@
 # DSA Preparation Tracker (MERN)
 
-Repository Name: `dsa-prep-tracker-mern`
+Repository Name: `dsa-prep-tracker`
 
 A full-stack multi-user DSA preparation tracker built with MongoDB, Express, React, and Node.js.
 Each user gets a personal dashboard, spaced-repetition revision queue, analytics, bookmarks, and company-wise sheets.

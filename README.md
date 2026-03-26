@@ -92,8 +92,3 @@ npm run dev
 - `GET /api/patterns`
 - `GET /api/user-problems/dashboard`
 
-## License
-
-MIT
-
-

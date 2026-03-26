@@ -68,38 +68,8 @@ npm run dev
 - Frontend: `http://localhost:5173`
 - Backend: `http://localhost:5000`
 
-## Deploy on Render (GitHub)
 
-This repo includes `render.yaml` so you can deploy frontend + backend from GitHub in one setup.
 
-1. Push latest code to GitHub.
-2. In Render, click **New +** -> **Blueprint**.
-3. Connect your GitHub repo and select `dsa-prep-tracker`.
-4. Render will detect `render.yaml` and create 2 services:
-   - `dsa-prep-tracker-api` (Node backend)
-   - `dsa-prep-tracker-web` (Static frontend)
-5. Set backend environment variables in Render (`dsa-prep-tracker-api`):
-   - `MONGO_URI` = your MongoDB Atlas URI
-   - `JWT_SECRET` = strong random string
-   - `CLIENT_URL` = your frontend Render URL (example: `https://dsa-prep-tracker-web.onrender.com`)
-6. Set frontend environment variable in Render (`dsa-prep-tracker-web`):
-   - `VITE_API_URL` = your backend API URL + `/api` (example: `https://dsa-prep-tracker-api.onrender.com/api`)
-7. Redeploy both services after env vars are set.
-8. Seed production database once from backend Shell:
-   - `npm run seed:problems`
-   - `npm run seed:patterns`
-
-### Manual Render Setup (without Blueprint)
-
-- Backend Web Service:
-  - Root Directory: `server`
-  - Build Command: `npm install`
-  - Start Command: `npm start`
-- Frontend Static Site:
-  - Root Directory: `client`
-  - Build Command: `npm install && npm run build`
-  - Publish Directory: `dist`
-  - Rewrite Rule: `/* -> /index.html`
 ## Screenshots
 
 ### Login
